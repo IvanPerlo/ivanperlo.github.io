@@ -1,0 +1,447 @@
+/* use this file to import your various scss files 
+
+/* ---base styles (generic stuff like fonts) */
+/* ,ake sure you get the reset maybe use normalize.scss */
+body {
+  background-color: hsla(0, 33%, 97%, 0.986);
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/* ---component styles (things like buttons) */
+.btn {
+  width: 220px;
+  height: 50px;
+  color: rgb(240, 232, 240);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(177, 86, 165) 0%, rgba(147, 13, 149, 0.6092544987) 35%, rgb(255, 0, 193) 100%);
+  border: none;
+  border-radius: 5ex;
+  margin: 30px 0 70px;
+  font-size: 100%;
+  transition: all 400ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0.5px #6e6c6c;
+}
+.btn:hover {
+  box-shadow: 0px 5px 5px -1px #7e7a7e;
+}
+
+.btn__works {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px;
+  border-radius: 40px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  box-shadow: 0px 5px 5px -1px #7e7a7e;
+}
+
+.num {
+  position: absolute;
+  display: flex;
+  flex-grow: initial;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: #9356DC;
+  color: hsla(0, 33%, 97%, 0.986);
+  border-radius: 100px;
+  left: -12px;
+}
+.works-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  padding: 10px 0 10px 0;
+  margin: 10px 10px 10px 30px;
+  font-size: 110%;
+  font-weight: 10px;
+  color: rgb(23, 22, 27);
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+@media (min-width: 1024px) {
+  .works-text {
+    font-size: 18px;
+  }
+}
+
+.input-icon {
+  color: rgb(106, 110, 109);
+  font-size: 150%;
+  margin: 0 0 0 40px;
+}
+
+.btn__entrees {
+  margin: 20px 0 0 0;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0.5px #a8a6a6;
+  width: 100%;
+}
+.btn__entrees:hover {
+  box-shadow: 0px 5px 5px -1px #7e7a7e;
+}
+@media (min-width: 1024px) {
+  .btn__entrees {
+    justify-content: center;
+  }
+}
+
+.entrees1 {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.entrees-price {
+  display: flex;
+  align-items: flex-end;
+  color: rgb(18, 19, 19);
+  font-size: 15px;
+  margin: 15px 10px 5px 0;
+}
+
+.btn-container {
+  padding: 50px 0;
+}
+
+.btn_order {
+  width: 220px;
+  color: rgb(240, 243, 243);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(177, 86, 165) 0%, rgba(147, 13, 149, 0.6092544987) 35%, rgb(255, 0, 193) 100%);
+  border-radius: 20px;
+  margin: auto;
+  font-size: 100%;
+  transition: all 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0.5px #6e6c6c;
+}
+.btn_order:hover {
+  box-shadow: 0px 5px 5px -1px #7e7a7e;
+}
+
+@keyframes {
+  from {
+    opacity: 0;
+    transform: translate 0, 50%, 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* ---layout styles (things like positioning things on the page) */
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.grid-row .grid-col {
+  margin: 0 20px;
+  width: calc(100% - 40px);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-row .grid-col-2-tablet {
+    width: calc(50% - 40px);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-row .grid-col-3-tablet {
+    width: calc(33.3333333333% - 40px);
+  }
+}
+@media (min-width: 1024px) {
+  .grid-row .grid-col-3-desktop {
+    width: calc(33.3333333333% - 40px);
+  }
+}
+@media (min-width: 1024px) {
+  .grid-row .grid-col-4-desktop {
+    width: calc(25% - 40px);
+  }
+}
+
+.location {
+  background-color: rgb(221, 218, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 104px;
+  padding-right: 120px;
+  z-index: 0;
+  color: rgb(83, 79, 79);
+  box-shadow: 0 0 10px 0.5px #6e6c6c;
+}
+.location i {
+  margin: 16px 18px 16px 0;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  font-size: 100%;
+}
+
+header {
+  background-color: #edebee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 0 50px 0;
+}
+
+.heading-works {
+  margin: 20px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heading-works {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+
+.restaurant-list {
+  margin-top: 80px;
+  background-color: #edebee;
+}
+
+.heading-list {
+  margin: 50px 0 10px 20px;
+}
+@media (min-width: 1024px) {
+  .heading-list {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heading-list {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 40px;
+  }
+}
+
+.restaurant {
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(101, 102, 101, 0.2);
+  transition: 0.3s;
+}
+.restaurant__image-box {
+  position: relative;
+}
+.restaurant__label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 20px 5px 20px;
+  font-size: 15px;
+  color: rgb(49, 139, 60);
+  background-color: #99E2D0;
+  border-radius: 3px;
+}
+.restaurant__image {
+  width: 100%;
+  height: 15rem;
+  display: block;
+  border-radius: 1rem 1rem 0rem 0rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+}
+.restaurant__text {
+  flex-grow: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  align-content: space-between;
+  color: rgb(15, 10, 10);
+}
+.restaurant__title {
+  font-size: 18px;
+}
+.restaurant__icon {
+  font-size: 10px;
+}
+
+.container-img {
+  width: 100%;
+}
+.container-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+}
+@media (min-width: 1024px) {
+  .container-img img {
+    height: 350px;
+  }
+}
+
+.menu {
+  color: rgb(27, 27, 31);
+  background-color: rgb(196, 192, 195);
+  border: 20px;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  margin-top: -90px;
+}
+@media (min-width: 1024px) {
+  .menu {
+    margin-top: -70px;
+  }
+}
+
+.menu__title {
+  padding: 20px;
+  color: rgb(18, 19, 19);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__title {
+    display: flex;
+    font-size: 2rem;
+    justify-content: start;
+  }
+}
+
+.i {
+  display: flex;
+  margin: 15px 0 10px -100px;
+  font-size: 20px;
+  position: relative;
+  color: rgb(18, 167, 50);
+}
+
+.footer {
+  background-color: rgb(54, 54, 54);
+  padding: 20px 10px 25px 20px;
+}
+@media (min-width: 1024px) {
+  .footer {
+    margin: auto;
+  }
+}
+
+.footer__logo {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: cooper black;
+  height: 2px;
+  color: #f7f4f4;
+  margin: 25px 0 0 15px;
+}
+@media (min-width: 1024px) {
+  .footer__logo {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    justify-content: center;
+  }
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    padding: 30px;
+    margin-left: 800px;
+  }
+}
+
+.footer__list {
+  margin: 50px 0 30px 10px;
+}
+
+.list__option {
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.list__option i {
+  padding-right: 15px;
+}
+
+.footer__list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    font-size: 10px;
+  }
+}
+.logo img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.logo .back-arrow {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 20px;
+  margin: auto 0;
+}
+.logo i {
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

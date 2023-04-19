@@ -1,0 +1,22 @@
+/* use this file to import your various scss files 
+
+/* ---base styles (generic stuff like fonts) */
+@import 'base/normalize'; /* ,ake sure you get the reset maybe use normalize.scss */
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/fonts';
+@import 'base/defaults';
+
+/* ---component styles (things like buttons) */
+
+@import 'components/buttons';
+@import 'components/animation';
+
+
+/* ---layout styles (things like positioning things on the page) */
+
+@import 'layouts/grid';
+@import 'layouts/home';
+@import 'layouts/menu';
+@import 'layouts/footer';
+@import 'layouts/header';

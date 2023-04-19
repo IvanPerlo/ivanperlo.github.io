@@ -1,0 +1,60 @@
+footer {
+    background-color:#1a9973;   
+    height: 40px;
+    position: relative; 
+    margin: 1 0 0 0;
+
+}       
+
+footer div {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 0 2.5%;
+}
+
+footer i {
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a {
+    font-size: 15px;
+    color: #fdcb46;
+    display: block;
+    margin: auto;
+
+}
+
+footer a:hover a {
+    animation-name: wiggle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+    5%
+    {
+        transform: rotate (8deg)
+    }
+    15%
+    {
+    transform: rotate (-8deg)
+    }
+    25%
+    {
+        transform: rotate (8deg)
+        }
+    35%
+    {
+        transform: rotate (-8deg)
+        }
+        40%
+        {
+            transform: rotate (0deg)
+            }
+        }

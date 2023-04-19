@@ -1,0 +1,49 @@
+.grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: flex;
+    flex-flow: row wrap;
+
+    .grid-col {
+        margin: 0 20px;
+        width: calc(100% - 40px); 
+    }
+
+    .grid-col-2-tablet {
+           
+        @include for-tablet {
+            width: calc(50% - 40px);
+        }
+
+    }
+
+    .grid-col-3-tablet {
+           
+        @include for-tablet {
+            width: calc(100% /3 - 40px);
+        }
+
+    }
+
+
+
+    .grid-col-3-desktop {
+            
+        @include for-desktop {
+            width: calc(100% /3 - 40px);
+
+        }
+    }
+
+    .grid-col-4-desktop {
+            
+        @include for-desktop {
+            width: calc(25% - 40px);
+
+        }
+    }
+}
+

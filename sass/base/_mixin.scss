@@ -1,0 +1,18 @@
+@mixin for-phone {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet {
+    @media (min-width: 768px) and  (max-width: 1023px) { @content; }
+}
+@mixin for-desktop {
+    @media (min-width: 1024px) { @content; }
+}
+
+@mixin box-shadow {
+
+    box-shadow: 0px 5px 5px -1px #7e7a7e;
+}
+
+@mixin box-shadow-hover {
+    box-shadow: 0px 5px 5px 1px #eb13a3;
+}
