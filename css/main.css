@@ -9,6 +9,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 /* ---component styles (things like buttons) */
 .btn {
   width: 220px;
@@ -26,7 +30,8 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 10px 0.5px #6e6c6c;
+  box-shadow: 0 0 10px 0.5px #c70b98;
+  transition: 1s;
 }
 .btn:hover {
   box-shadow: 0px 5px 5px -1px #7e7a7e;
@@ -42,7 +47,12 @@ body {
   padding: 5px;
   margin: 10px 0 10px 0;
   width: 100%;
+  transition: 1s;
   box-shadow: 0px 5px 5px -1px #7e7a7e;
+}
+.btn__works:hover {
+  background-color: #f8d1f8;
+  color: #be37e0;
 }
 
 .num {
@@ -81,7 +91,7 @@ body {
 }
 
 .input-icon {
-  color: rgb(106, 110, 109);
+  color: rgb(78, 82, 81);
   font-size: 150%;
   margin: 0 0 0 40px;
 }
@@ -98,10 +108,12 @@ body {
 }
 .btn__entrees:hover {
   box-shadow: 0px 5px 5px -1px #7e7a7e;
+  transition: 1s;
 }
 @media (min-width: 1024px) {
   .btn__entrees {
     justify-content: center;
+    transition: 1s;
   }
 }
 
@@ -140,18 +152,95 @@ body {
 }
 .btn_order:hover {
   box-shadow: 0px 5px 5px -1px #7e7a7e;
+  transition: 1s;
 }
 
-@keyframes {
-  from {
-    opacity: 0;
-    transform: translate 0, 50%, 0;
-  }
+.loading {
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  color: #fff;
+  background-color: black;
+}
+
+@keyframes hideAnimation {
   to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
 }
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.6em;
+  height: 0.6em;
+  margin: 0.19em;
+  background: #007DB6;
+  border-radius: 0.6em;
+  animation: loading 1s infinite alternate;
+}
+
+.loading span:nth-of-type(2) {
+  background: #008FB2;
+  animation-delay: 0.2s;
+}
+
+.loading span:nth-of-type(3) {
+  background: #009B9E;
+  animation-delay: 0.4s;
+}
+
+.loading span:nth-of-type(4) {
+  background: #00A77D;
+  animation-delay: 0.6s;
+}
+
+.loading span:nth-of-type(5) {
+  background: #00B247;
+  animation-delay: 0.8s;
+}
+
+.loading span:nth-of-type(6) {
+  background: #5AB027;
+  animation-delay: 1s;
+}
+
+.loading span:nth-of-type(7) {
+  background: #A0B61E;
+  animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.heart-items i {
+  transition: opacity 1s ease-in-out;
+}
+
+.heart-fill {
+  background: linear-gradient(pink, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.heart-fill:hover {
+  opacity: 1;
+}
+
 /* ---layout styles (things like positioning things on the page) */
 .grid-container {
   max-width: 1200px;
@@ -185,6 +274,10 @@ body {
   .grid-row .grid-col-4-desktop {
     width: calc(25% - 40px);
   }
+}
+
+.wrapper {
+  position: relative;
 }
 
 .location {
@@ -332,22 +425,15 @@ header {
   }
 }
 
+.menu__title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .menu__title {
   padding: 20px;
   color: rgb(18, 19, 19);
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .menu__title {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (min-width: 1024px) {
-  .menu__title {
-    display: flex;
-    font-size: 2rem;
-    justify-content: start;
-  }
 }
 
 .i {
@@ -361,6 +447,10 @@ header {
 .footer {
   background-color: rgb(54, 54, 54);
   padding: 20px 10px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 @media (min-width: 1024px) {
   .footer {
@@ -388,6 +478,7 @@ header {
 .footer ul {
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
   .footer ul {
@@ -395,7 +486,7 @@ header {
     flex-direction: column;
     font-size: 19px;
     padding: 30px;
-    margin-left: 800px;
+    margin-left: 460px;
   }
 }
 

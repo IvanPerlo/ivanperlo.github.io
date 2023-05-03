@@ -18,13 +18,6 @@
     }
 }
 
-// .container-menu {
-//     border: solid rgb(0, 255, 21);
-//     background-color: grey;
-//     display: block;
-
-
-// }
 
 .menu {
     color: rgb(27, 27, 31);
@@ -39,28 +32,28 @@
     }
 }
 
+.menu__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .menu__title {
     padding: 20px;
     color: rgb(18, 19, 19);
 
-    @include for-tablet {
-        display: flex;
-        justify-content: center;
-    }
 
-    @include for-desktop {
+    // @include for-tablet {
+    //     display: flex;
+    //     justify-content: center;
+    // }
 
-        display: flex;
-        font-size: 2rem;
-
-        justify-content: start;
-
-
-
-    }
-
-
+    // @include for-desktop {
+    //     display: flex;
+    //     font-size: 2rem;
+    //     justify-content: start;
+    // }
 }
 
 .i {

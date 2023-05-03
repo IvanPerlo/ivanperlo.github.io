@@ -14,7 +14,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 0 10px 0.5px #6e6c6c;
+    box-shadow: 0 0 10px 0.5px #c70b98;
+    transition: 1s;
 
 
     &:hover {
@@ -34,11 +35,21 @@
     padding: 5px;
     margin: 10px 0 10px 0;
     width: 100%;
+    transition: 1s;
 
 
     @include box-shadow;
 
+    &:hover {
+        background-color: #f8d1f8;
+        color: #be37e0;
+     
 
+     }
+
+
+    
+    
 
 }
 
@@ -96,9 +107,11 @@
 }
 
 .input-icon {
-    color: rgb(106, 110, 109);
+    color: rgb(78, 82, 81);
     font-size: 150%;
     margin: 0 0 0 40px;
+
+
 }
 
 
@@ -116,14 +129,17 @@
     cursor: pointer;
     box-shadow: 0 0 10px 0.5px #a8a6a6;
     width: 100%;
+    transition: all 0.5s;
 
     &:hover {
         @include box-shadow;
+        padding-right: 25px;
     }
 
     @include for-desktop {
 
         justify-content: center;
+        transition: 1s;
     }
 }
 
@@ -132,6 +148,8 @@
     flex-grow: 1;
     text-align: left;
     margin-left: 10px;
+
+
 }
 
 .entrees-price {
@@ -167,6 +185,7 @@
 
     &:hover {
         @include box-shadow;
+        transition: 1s;
     }
 
 

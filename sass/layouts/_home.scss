@@ -1,3 +1,6 @@
+.wrapper {
+    position: relative;
+}
 
 
 
@@ -22,14 +25,16 @@
     i {
         margin: 16px 18px 16px 0;
     }
-    
+
 }
+
 .text {
     display: flex;
     justify-content: center;
     font-size: 100%;
 
 }
+
 header {
     background-color: $fifth;
     display: flex;
@@ -41,6 +46,7 @@ header {
     margin: 0 0 50px 0;
 
 }
+
 // <!--Main Restaurant List-->
 .heading-works {
     margin: 20px;
@@ -49,13 +55,13 @@ header {
         width: 100%;
         font-size: 30px;
     }
-    
+
 }
 
 
 .restaurant-list {
     margin-top: 80px;
-    background-color: $fifth;  
+    background-color: $fifth;
 }
 
 .heading-list {
@@ -66,21 +72,22 @@ header {
         font-size: 30px;
 
     }
+
     @include for-tablet {
         width: 100%;
         justify-content: space-between;
         font-size: 40px;
     }
-    
+
 }
 
 
 .restaurant {
-    margin-bottom:  20px;
+    margin-bottom: 20px;
     background-color: white;
-	border-radius: 1.25rem;
-	box-shadow: 0 0.25rem 0.5rem 0 rgba(101, 102, 101, 0.2);
-	transition: 0.3s;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(101, 102, 101, 0.2);
+    transition: 0.3s;
 
     &__image-box {
         position: relative;
@@ -88,7 +95,7 @@ header {
 
     &__label {
         position: absolute;
-        top:15px;
+        top: 15px;
         right: 15px;
         padding: 5px 20px 5px 20px;
         font-size: 15px;
@@ -121,7 +128,7 @@ header {
         align-content: space-between;
         color: rgb(15, 10, 10);
 
-    
+
     }
 
     &__title {

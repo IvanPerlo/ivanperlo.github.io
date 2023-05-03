@@ -12,13 +12,6 @@
       margin: auto;
    }
 }
-//   }
-
-
-   //width: calc(100% - 20px);
-  //width: calc(25% - 20px); //pc
-  //width: calc(50% - 20px); //tablet
-
 .footer__logo {
 
    font-size: 1.5rem;
@@ -36,23 +29,18 @@
 
   }
 
-//    @include for-desktop {
-
-//       font-size: 3rem;
-//       position: absolute;
-//       margin: 50px 10px 10px -600px;
-// }
 }
 .footer ul {
    list-style: none;
    padding: 0;
+   justify-content: center;
 
    @include for-desktop {
       display: flex;
       flex-direction: column;
       font-size: 19px;
       padding: 30px;
-      margin-left: 800px;
+      margin-left: 460px;
 
   }
 }
