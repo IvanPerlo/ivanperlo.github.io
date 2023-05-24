@@ -1,183 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Gourmand</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Gourmand</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/main.css">
-</head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <div class="back-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </a>
+          <img src="/images/ohmyfood.png" alt="logo" />
+        </div>
+        <div class="container-img">
+          <img
+            src="/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt=""
+          />
+        </div>
+      </header>
 
-<body>
-  <div class="grid-container">
-    <header>
-      <div class="logo">
-        <a href="index.html">
-          <div class="back-arrow">
-            <i class="fa-solid fa-arrow-left"></i>
+      <div class="menu">
+        <div class="menu__title-box">
+          <h3 class="menu__title">Le Gourmand</h3>
+          <div class="fa-stack heart-items">
+            <i class="fa fa-regular fa-heart fa-stack-2x heart-empty"></i>
+            <i class="fa-solid fa-heart fa-stack-2x heart-fill"></i>
           </div>
-        </a>
-        <img src="/images/ohmyfood.png" alt="logo">
+        </div>
+
+        <div class="menu-animate">
+          <!--Entrees-->
+          <div class="grid-row">
+            <div class="grid-col">
+              <h5>ENTREES</h5>
+            </div>
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading">
+                      <strong>Tuna Carpaccio</strong>
+                    </p>
+                    <p class="dishes__text">seasoned with yuzu</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>25€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading">
+                      <strong>Crunchy Lobster Croquets</strong>
+                    </p>
+                    <p class="dishes__text">with seasonal vegetables</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>35€</strong></p>
+
+                    <div class="dishes__icon">
+                      <i
+                        class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading">
+                      <strong>Mushroom Soup</strong>
+                    </p>
+                    <p class="dishes__text">with truffles</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>20€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mains-->
+          <div class="grid-row">
+            <div class="grid-col">
+              <h5>MAIN DISH</h5>
+            </div>
+
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading">
+                      <strong>Roast Chicken with Provincal Herbs</strong>
+                    </p>
+                    <p class="dishes__text">With truffle cream</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>40€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading">
+                      <strong>Roasted Lobster</strong>
+                    </p>
+                    <p class="dishes__text">with seasonal vegetables</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>35€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading">
+                      <strong>Angust Beef Ribs</strong>
+                    </p>
+                    <p class="dishes__text">with mashed parshnips</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>44€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--desserts-->
+          <div class="grid-row">
+            <div class="grid-col">
+              <h5>DESSERTS</h5>
+            </div>
+
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading">
+                      <strong>Assorted Dessert Plate</strong>
+                    </p>
+                    <p class="dishes__text">Chef's choice</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>18€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading"><strong>Creme brulee</strong></p>
+                    <p class="dishes__text">Revisited</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>22€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
+              <div class="dishes">
+                <div class="dishes__content">
+                  <div class="dishes__text">
+                    <p class="dishes__heading"><strong>Tiramisu</strong></p>
+                    <p class="dishes__text">With hazelnuts</p>
+                  </div>
+                  <div class="dishes__price">
+                    <p class="precio"><strong>23€</strong></p>
+                  </div>
+                  <div class="dishes__icon">
+                    <i
+                      class="fa-solid fa-circle-check dishes__rotate fa-2xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <div class="btn_order">
+            <p>Order</p>
+          </div>
+        </div>
+
+        <!-- --footer-- -->
+
+        <footer class="footer">
+          <div class="footer__logo"><strong>Ohmyfood</strong></div>
+          <ul class="footer__list">
+            <li class="list__option" href="#">
+              <i class="fa-solid fa-utensils"></i
+              ><strong>Suggest a restaurant</strong>
+            </li>
+            <li class="list__option" href="#">
+              <i class="fa-solid fa-handshake-angle"></i
+              ><strong>Become a partner</strong>
+            </li>
+            <li class="list__option" href="#"><strong>Legal</strong></li>
+            <a href="iaperezl888@hotmail.com"><strong>Contact</strong></a>
+          </ul>
+        </footer>
       </div>
-      <div class="container-img">
-        <img src="/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-      </div>
-    </header>
-
-
-    <div class="menu">
-
-      <h3 class="menu__title">Le Gourmand <i class="fa-light fa-heart"></i>
-      </h3>
-
-
-      <!--Entrees-->
-      <div class="grid-row">
-        <div class="grid-col">
-          <h5>ENTREES</h5>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Tuna Carpaccio<br></strong></p>
-              <p>seasoned with yuzu</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>25€</strong></p>
-            </div>
-          </button>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Crunchy Lobster Croquets</strong></p>
-              <p>with seasonal vegetables</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>35€</strong></p>
-            </div>
-          </button>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Mushroom Soup<br></strong></p>
-              <p>with truffles</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>20€</strong></p>
-            </div>
-          </button>
-        </div>
-      </div>
-      <!--mains-->
-      <div class="grid-row">
-        <div class="grid-col">
-          <h5>MAIN DISH</h5>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Roast Chicken with Provincal<br></strong></p>
-              <p><strong>Herbs</strong></p>
-              <p>With truffle cream</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>40€</strong></p>
-            </div>
-          </button>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Roasted Lobster</strong></p>
-              <p>with seasonal vegetables</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>35€</strong></p>
-            </div>
-          </button>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Angust Beef Ribs<br></strong></p>
-              <p>with mashed parshnips</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>44€</strong></p>
-            </div>
-          </button>
-        </div>
-      </div>
-      <!--desserts-->
-      <div class="grid-row">
-        <div class="grid-col">
-          <h5>DESSERTS</h5>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Assorted Dessert TheEnchantedPlate<br></strong></p>
-              <p>Chef's choice</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>18€</strong></p>
-            </div>
-          </button>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Creme brulee</strong></p>
-              <p>Revisited</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>22€</strong></p>
-            </div>
-          </button>
-        </div>
-        <div class="grid-col grid-col-2-tablet grid-col-3-desktop">
-          <button class="btn__entrees">
-            <div class="entrees1">
-              <p><strong>Tiramisu<br></strong></p>
-              <p>with Hazelnuts</p>
-            </div>
-            <div class="entrees-price">
-              <p class="precio"><strong>23€</strong></p>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div class="btn-container">
-        <div class="btn_order">
-          <p>Order</p>
-        </div>
-      </div>
-<!-- --footer-- -->
-
-      <footer class="footer">
-        <div class="footer__logo"><strong>Ohmyfood</strong></div>
-        <ul class="footer__list">
-          <li class="list__option" href="#"><i class="fa-solid fa-utensils"></i><strong>Suggest a
-              restaurant</strong></em>
-          </li>
-          <li class="list__option" href="#"><i class="fa-solid fa-handshake-angle"></i><strong>Become a partner</strong>
-          </li>
-          <li class="list__option" href="#"><strong>Legal</strong></li>
-          <a href="iaperezl888@hotmail.com"><strong>Contact</strong></a>
-        </ul>
-      </footer>
-
-
     </div>
-  </div>
-
-  </div>
-</body>
-
+  </body>
 </html>

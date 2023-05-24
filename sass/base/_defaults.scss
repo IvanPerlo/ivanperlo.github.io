@@ -7,21 +7,19 @@
 //     }
 // }
 
-
 body {
-    background-color: $quaternary;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, sans-serif;
-    // @include for-phone-only {    
-    //     font-size: 1rem; 
-    //  }
-    // @include for-desktop {
-    //     margin: 0 10px 0 10px;
-    // }
+  background-color: $quaternary;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  // @include for-phone-only {
+  //     font-size: 1rem;
+  //  }
+  // @include for-desktop {
+  //     margin: 0 10px 0 10px;
+  // }
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-

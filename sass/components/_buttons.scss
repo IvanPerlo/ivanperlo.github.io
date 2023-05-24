@@ -1,193 +1,181 @@
 .btn {
-    width: 220px;
-    height: 50px;
-    color: rgb(240, 232, 240);
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgb(177, 86, 165) 0%, rgba(147, 13, 149, 0.609254498714653) 35%, rgba(255, 0, 193, 1) 100%);
-    border: none;
-    border-radius: 5ex;
-    margin: 30px 0 70px;
-    font-size: 100%;
-    transition: all 400ms;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 0 10px 0.5px #c70b98;
-    transition: 1s;
+  width: 220px;
+  height: 50px;
+  color: rgb(240, 232, 240);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(177, 86, 165) 0%,
+    rgba(147, 13, 149, 0.609254498714653) 35%,
+    rgba(255, 0, 193, 1) 100%
+  );
+  border: none;
+  border-radius: 5ex;
+  margin: 30px 0 70px;
+  font-size: 100%;
+  transition: all 400ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0.5px #c70b98;
+  transition: 1s;
 
-
-    &:hover {
-        @include box-shadow;
-    }
-
-
+  &:hover {
+    @include box-shadow;
+  }
 }
 
 .btn__works {
-    position: relative;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    border: 1px;
-    border-radius: 40px;
-    padding: 5px;
-    margin: 10px 0 10px 0;
-    width: 100%;
-    transition: 1s;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px 0 10px 10px;
+  width: 98%;
+  transition: 1s;
+  @include box-shadow;
 
+  &:hover {
+    background-color: #f8d1f8;
+    color: #be37e0;
 
-    @include box-shadow;
-
-    &:hover {
-        background-color: #f8d1f8;
-        color: #be37e0;
-     
-
-     }
-
-
-    
-    
-
+    .input-icon {
+      color: rgb(155, 29, 167);
+    }
+  }
 }
-
 
 .num {
+  position: absolute;
+  display: flex;
+  flex-grow: initial;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: $primary;
+  color: $quaternary;
+  border-radius: 100px;
+  // margin: 0px 0px 0 -10px;
+  left: -12px;
 
-    position: absolute;
-    display: flex;
-    flex-grow: initial;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    background-color: $primary;
-    color: $quaternary;
-    border-radius: 100px;
-    // margin: 0px 0px 0 -10px;
-    left: -12px;
+  @include for-desktop {
+    // margin: 0 0px 0 -10px;
+  }
 
-
-    @include for-desktop {
-        // margin: 0 0px 0 -10px;
-    }
-
-    @include for-tablet {
-
-        // margin: 0 0px 0 -10px;
-    }
-
-
+  @include for-tablet {
+    // margin: 0 0px 0 -10px;
+  }
 }
 
-
 .works-text {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: auto;
-    height: auto;
-    z-index: 1;
-    padding: 10px 0 10px 0;
-    margin: 10px 10px 10px 30px;
-    font-size: 110%;
-    font-weight: 10px;
-    color: rgb(23, 22, 27);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  padding: 10px 0 10px 0;
+  margin: 10px 10px 10px 30px;
+  font-size: 110%;
+  font-weight: 10px;
+  color: rgb(23, 22, 27);
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
 
-    @include for-desktop {
-        font-size: 18px;
-    }
+  @include for-tablet {
+    margin-left: 3px;
+    font-size: 12px;
+  }
 
-
+  @include for-desktop {
+    font-size: 18px;
+  }
 }
 
 .input-icon {
-    color: rgb(78, 82, 81);
-    font-size: 150%;
-    margin: 0 0 0 40px;
+  color: rgb(78, 82, 81);
+  font-size: 150%;
+  margin: 0 0 0 40px;
 
-
+  @include for-tablet {
+    margin-left: 25px;
+  }
 }
-
-
 
 // menus
 
+// .btn__entrees {
+//     margin: 20px 0 0 0;
+//     display: flex;
+//     background-color: rgb(255, 255, 255);
+//     border: 10px;
+//     border-radius: 20px;
+//     cursor: pointer;
+//     box-shadow: 0 0 10px 0.5px #a8a6a6;
+//     width: 100%;
+//     transition: all 0.5s;
 
+//     &:hover {
+//         @include box-shadow;
+//         padding-right: 25px;
+//     }
 
-.btn__entrees {
-    margin: 20px 0 0 0;
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    border: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 10px 0.5px #a8a6a6;
-    width: 100%;
-    transition: all 0.5s;
+//     @include for-desktop {
 
-    &:hover {
-        @include box-shadow;
-        padding-right: 25px;
-    }
+//         justify-content: center;
+//         transition: 1s;
+//         padding-right: 25px;
+//     }
+// }
 
-    @include for-desktop {
+// .entrees1 {
+//     flex-grow: 1;
+//     text-align: left;
+//     margin-left: 10px;
 
-        justify-content: center;
-        transition: 1s;
-    }
-}
+// }
 
-
-.entrees1 {
-    flex-grow: 1;
-    text-align: left;
-    margin-left: 10px;
-
-
-}
-
-.entrees-price {
-    display: flex;
-    align-items: flex-end;
-    color: rgb(18, 19, 19);
-    font-size: 15px;
-    margin: 15px 10px 5px 0;
-}
+// .entrees-price {
+//     display: flex;
+//     align-items: flex-end;
+//     color: rgb(18, 19, 19);
+//     font-size: 15px;
+//     margin: 15px 10px 5px 0;
+// }
 
 .btn-container {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .btn_order {
-    width: 220px;
+  width: 220px;
+  color: rgb(240, 243, 243);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(177, 86, 165) 0%,
+    rgba(147, 13, 149, 0.609254498714653) 35%,
+    rgba(255, 0, 193, 1) 100%
+  );
+  border-radius: 20px;
+  margin: auto;
+  font-size: 100%;
+  transition: all 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0.5px #6e6c6c;
 
-    color: rgb(240, 243, 243);
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgb(177, 86, 165) 0%, rgba(147, 13, 149, 0.609254498714653) 35%, rgba(255, 0, 193, 1) 100%);
-    border-radius: 20px;
-    margin: auto;
-
-   
-    font-size: 100%;
-    transition: all 400ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 0 10px 0.5px #6e6c6c;
-
-
-    &:hover {
-        @include box-shadow;
-        transition: 1s;
-    }
-
-
-
+  &:hover {
+    @include box-shadow;
+    transition: 1s;
+  }
 }

@@ -1,38 +1,33 @@
-
 .logo {
   background-color: #fff;
   width: 100%;
   padding: 10px 0;
   position: relative;
 
+  @include for-tablet {
+    font-size: 10px;
+  }
 
-   
-    @include for-tablet {
-        font-size: 10px;
-    }
+  @include for-desktop {
+    // padding: 50px 0 20px 0;
+  }
 
-    @include for-desktop {
-       // padding: 50px 0 20px 0;
-    }
+  img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 
-    img {
-        width:250px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
+  .back-arrow {
+    position: absolute;
+    // should be always half of the icon font size when minus from the 50%
+    top: calc(50% - 10px);
+    left: 20px;
+    margin: auto 0;
+  }
 
-    .back-arrow {
-        position: absolute;
-        // should be always half of the icon font size when minus from the 50%
-        top: calc(50% - 10px);
-        left: 20px;
-        margin: auto 0;
-
-    }
-
-    i {
-        font-size: 20px;
-    }
+  i {
+    font-size: 20px;
+  }
 }
-

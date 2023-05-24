@@ -7,7 +7,7 @@ $fifth: #edebee;
 $sixth: rgb(221, 218, 218);
 $seventh: #070707;
 
-$mediaphone: "(max-width: 768px)";
-$mediatablet: "(max-width: 768px)";
-$medialaptop: "(min-width: 992px)";
-
+// animate hover tick
+$duration: 1s; // duration for the animation
+$slide-width: 70px; // width of the icon box 
+$container-padding: 0; // padding of container
