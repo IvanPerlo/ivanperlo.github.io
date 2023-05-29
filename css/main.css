@@ -100,6 +100,7 @@ a:hover {
 }
 
 .input-icon {
+  display: block;
   color: rgb(78, 82, 81);
   font-size: 150%;
   margin: 0 0 0 40px;
@@ -135,7 +136,7 @@ a:hover {
 }
 
 .loading {
-  animation: hideAnimation 0s ease-in 5s;
+  animation: hideAnimation 0s ease-in 3s;
   animation-fill-mode: forwards;
   position: absolute;
   width: 100%;
@@ -484,11 +485,6 @@ header p {
   border-radius: 40px 40px 0 0;
   position: relative;
   margin-top: -90px;
-}
-@media (min-width: 1024px) {
-  .menu {
-    margin-top: -70px;
-  }
 }
 
 .menu h5 {

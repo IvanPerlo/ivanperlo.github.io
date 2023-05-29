@@ -1,6 +1,6 @@
 // page loader animation
 .loading {
-  animation: hideAnimation 0s ease-in 5s;
+  animation: hideAnimation 0s ease-in 3s;
   animation-fill-mode: forwards;
   position: absolute;
   width: 100%;
@@ -92,21 +92,20 @@
 }
 
 .dishes {
-  $self: &; //this allows us to use #{ $self } to refer to .container
   padding: $container-padding;
 
   &:hover {
     cursor: pointer;
 
-    #{ $self }__icon {
+    .dishes__icon {
       right: 0; //animation that slides icon in from right side
     }
 
-    #{ $self }__price {
+    .dishes__price {
       margin-right: $slide-width; // animation margin so we can see ellipses if text doesn't fit, included for heading as well, but maybe it not needed for heading and text should just wrap, so you could remove the heading one if you wish
     }
 
-    #{ $self }__rotate {
+    .dishes__rotate {
       transform: rotate(360deg); // animation for rotation
     }
   }
